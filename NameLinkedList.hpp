@@ -1,6 +1,6 @@
 /*
  * Student Name: Collin Lowing
- * File Name: NameLinkedList.h
+ * File Name: NameLinkedList.hpp
  * Project 1
  *
  * Header for class NameLinkedList

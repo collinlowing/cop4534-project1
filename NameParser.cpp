@@ -6,5 +6,5 @@
  * Source file for class NameParser
  */
 
-#include "NameParser.h"
+#include "NameParser.hpp"
 

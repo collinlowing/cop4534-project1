@@ -1,6 +1,6 @@
 /*
  * Student Name: Collin Lowing
- * File Name: PasswordEncryptor.h
+ * File Name: PasswordEncryptor.hpp
  * Project 1
  *
  * Header for class PasswordEncryptor

@@ -6,7 +6,7 @@
  * Source file for class HashTable
  */
 
-#include "HashTable.h"
+#include "HashTable.hpp"
 
 HashTable::HashTable() {
 	// TODO Auto-generated constructor stub

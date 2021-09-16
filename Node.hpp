@@ -1,6 +1,6 @@
 /*
  * Student Name: Collin Lowing
- * File Name: Node.h
+ * File Name: Node.hpp
  * Project 1
  *
  * Header for class Node

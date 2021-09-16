@@ -6,7 +6,7 @@
  * Source file for class HashEntry
  */
 
-#include "HashEntry.h"
+#include "HashEntry.hpp"
 
 HashEntry::HashEntry() {
 	// TODO Auto-generated constructor stub

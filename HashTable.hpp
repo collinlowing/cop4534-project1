@@ -1,6 +1,6 @@
 /*
  * Student Name: Collin Lowing
- * File Name: HashTable.h
+ * File Name: HashTable.hpp
  * Project 1
  *
  * Header for class HashTable

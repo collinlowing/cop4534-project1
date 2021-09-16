@@ -1,6 +1,6 @@
 /*
  * Student Name: Collin Lowing
- * File Name: VigenereCiphere.h
+ * File Name: VigenereCiphere.hpp
  * Project 1
  *
  * Header for class VigenereCiphere

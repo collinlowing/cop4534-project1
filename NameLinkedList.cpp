@@ -6,7 +6,7 @@
  * Header for class NameLinkedList
  */
 
-#include "NameLinkedList.h"
+#include "NameLinkedList.hpp"
 
 NameLinkedList::~NameLinkedList() {
 	// TODO Auto-generated destructor stub

@@ -6,7 +6,7 @@
  * source file for class PasswordEncryptor
  */
 
-#include "PasswordEncryptor.h"
+#include "PasswordEncryptor.hpp"
 
 PasswordEncryptor::PasswordEncryptor() {
 	// TODO Auto-generated constructor stub

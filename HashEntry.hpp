@@ -1,6 +1,6 @@
 /*
  * Student Name: Collin Lowing
- * File Name: HashEntry.h
+ * File Name: HashEntry.hpp
  * Project 1
  *
  * Header for class HashEntry

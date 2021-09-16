@@ -6,7 +6,7 @@
  * Source file for class Node
  */
 
-#include "Node.h"
+#include "Node.hpp"
 
 Node::Node() {
 	// TODO Auto-generated constructor stub

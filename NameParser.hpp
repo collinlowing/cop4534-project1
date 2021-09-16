@@ -1,6 +1,6 @@
 /*
  * Student Name: Collin Lowing
- * File Name: NameParser.h
+ * File Name: NameParser.hpp
  * Project 1
  *
  * Header for class NameParser
