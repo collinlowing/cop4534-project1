@@ -1,8 +1,9 @@
 /*
- * HashTable.cpp
+ * Student Name: Collin Lowing
+ * File Name: HashTable.cpp
+ * Project 1
  *
- *  Created on: Sep 15, 2021
- *      Author: cel
+ * Source file for class HashTable
  */
 
 #include "HashTable.h"

@@ -1,8 +1,9 @@
 /*
- * PasswordEncryptor.cpp
+ * Student Name: Collin Lowing
+ * File Name: PasswordEncryptor.cpp
+ * Project 1
  *
- *  Created on: Sep 15, 2021
- *      Author: cel
+ * source file for class PasswordEncryptor
  */
 
 #include "PasswordEncryptor.h"

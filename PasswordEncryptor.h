@@ -1,8 +1,9 @@
 /*
- * PasswordEncryptor.h
+ * Student Name: Collin Lowing
+ * File Name: PasswordEncryptor.h
+ * Project 1
  *
- *  Created on: Sep 15, 2021
- *      Author: cel
+ * Header for class PasswordEncryptor
  */
 
 #ifndef PASSWORDENCRYPTOR_H_

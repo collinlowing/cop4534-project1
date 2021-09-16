@@ -1,8 +1,9 @@
 /*
- * NameLinkedList.cpp
+ * Student Name: Collin Lowing
+ * File Name: NameLinkedList.cpp
+ * Project 1
  *
- *  Created on: Sep 15, 2021
- *      Author: cel
+ * Header for class NameLinkedList
  */
 
 #include "NameLinkedList.h"

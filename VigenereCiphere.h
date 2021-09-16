@@ -1,8 +1,9 @@
 /*
- * VigenereCiphere.h
+ * Student Name: Collin Lowing
+ * File Name: VigenereCiphere.h
+ * Project 1
  *
- *  Created on: Sep 15, 2021
- *      Author: cel
+ * Header for class VigenereCiphere
  */
 
 #ifndef VIGENERECIPHERE_H_
