@@ -12,14 +12,11 @@
 #include <string>
 
 class VigenereCiphere {
-private:
-	std::string	key;
-	std::string name;
-	std::string encryptedPassword;
 
 public:
-	std::string encrypt(std::string name);
-	std::string decrypt(std::string encryptPassword);
+  std::string generateKey(std::string name, std::string key);
+	std::string encrypt(std::string name, std::string key);
+	std::string decrypt(std::string encryptedPassword, std::string key);
 };
 
 #endif /* VIGENERECIPHERE_H_ */
