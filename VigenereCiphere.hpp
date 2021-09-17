@@ -14,7 +14,7 @@
 class VigenereCiphere {
 
 public:
-  std::string generateKey(std::string name, std::string key);
+  std::string resizeKey(std::string name, std::string key);
 	std::string encrypt(std::string name, std::string key);
 	std::string decrypt(std::string encryptedPassword, std::string key);
 };

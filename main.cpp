@@ -4,14 +4,17 @@
 
 int main()
 {
-	std::string test = "test";
-  std::string keyWord = "jones";
+	std::string test = "HELLO";
+  std::string keyWord = "JAMES";
   std::string key;
+  std::string encrypted;
 	VigenereCiphere ciphere;
 
-  key = ciphere.generateKey(test, keyWord);
+  key = ciphere.resizeKey(test, keyWord);
+  encrypted = ciphere.encrypt(test, key);
 
-	std::cout << ciphere.decrypt(test, key) << std::endl;
+	std::cout << encrypted << std::endl;
+  std::cout << ciphere.decrypt(encrypted, key) << std::endl;
 
 	return 0;
 }

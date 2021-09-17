@@ -8,52 +8,55 @@
 
 #include "VigenereCiphere.hpp"
 
-std::string VigenereCiphere::generateKey(std::string name, std::string keyWord)
+//Resizes key word to fit the name size.
+std::string VigenereCiphere::resizeKey(std::string name, std::string keyWord)
 {
-  std::string newKey;
-  unsigned int nameSize = name.size();
-
-  for(unsigned int i = 0, j = 0; i < nameSize; ++i, ++j){
-        if(j == keyWord.size())
-            j = 0;
+  int nameSize = name.size();
  
-        newKey[i] = keyWord[j];
+    for (int i = 0; ; i++)
+    {
+        if (nameSize == i)
+            i = 0;
+
+        if (keyWord.size() == name.size())
+            break;
+
+        keyWord.push_back(keyWord[i]);
     }
-  
-  return newKey;
+    return keyWord;
 }
 
+// Encrypts name using resized key
 std::string VigenereCiphere::encrypt(std::string name, std::string key)
 {
   std::string encryptedPassword;
  
     for (unsigned int i = 0; i < name.size(); i++)
     {
-        // convert name into char in range 0-25
-        char ch = (name[i] + key[i]) %26;
+        // converting in range 0-25
+        char x = (name[i] + key[i]) %26;
  
-        // convert into ASCII value
-        ch += 'A';
+        // convert into alphabets(ASCII)
+        x += 'A';
  
-        encryptedPassword.push_back(ch);
+        encryptedPassword.push_back(x);
     }
-  
-  return encryptedPassword;
+    return encryptedPassword;
 }
 
+// Decrypts the name using the resized key
 std::string VigenereCiphere::decrypt(std::string encryptedPassword, std::string key)
 {
-	std::string name = encryptedPassword;
+	std::string decryptedMessage;
  
     for (unsigned int i = 0 ; i < encryptedPassword.size(); i++)
     {
-        // convert name into char in range 0-25
-        char ch = (encryptedPassword[i] - key[i] + 26) %26;
+        // converting in range 0-25
+        char x = (encryptedPassword[i] - key[i] + 26) %26;
  
-        // convert into ASCII value
-        ch += 'A';
-        name.push_back(ch);
+        // convert into alphabets(ASCII)
+        x += 'A';
+        decryptedMessage.push_back(x);
     }
-
-    return name;
+    return decryptedMessage;
 }
