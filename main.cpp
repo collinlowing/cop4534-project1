@@ -6,29 +6,23 @@
 
 int main()
 {
-  // Testing Ciphere
-	std::string test = "HELLO";
   std::string keyWord = "JAMES";
   std::string key;
-  std::string encrypted;
 	VigenereCiphere ciphere;
 
-  key = ciphere.resizeKey(test, keyWord);
-  encrypted = ciphere.encrypt(test, key);
+  key = ciphere.resizeKey("Wolfeschlegelsteinhausenbergerdorff", keyWord);
 
-	std::cout << encrypted << std::endl;
-  std::cout << ciphere.decrypt(encrypted, key) << std::endl;
-
-  //testing NameParser
+  // Read names.txt and extract a list of names in a queue
   std::queue<std::string> nameQueue;
 
   NameParser parse;
   nameQueue = parse.readFile();
-  std::cout << nameQueue.front() << std::endl;
 
+  // Write to file encrypteddata.txt
   std::string outputFileName = "encrypteddata.txt";
   std::fstream fileOutput;
 
+  // Test if file is open
   fileOutput.open(outputFileName, std::ios_base::out);
   if(!fileOutput.is_open())
   {
