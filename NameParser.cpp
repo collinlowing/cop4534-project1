@@ -8,15 +8,17 @@
 
 #include "NameParser.hpp"
 
-void NameParser::readFile()
+std::queue<std::string> NameParser::readFile()
 {
   fileInputStream.open(fileName);
   std::string tempLine;
+  std::queue<std::string> nameQueue;
+
   if(fileInputStream.is_open())
   {
     while(std::getline(fileInputStream, tempLine))
     {
-      parseLine(tempLine);
+      nameQueue.push(parseLine(tempLine));
     }
   }
   else
@@ -24,13 +26,13 @@ void NameParser::readFile()
     std::cout << "FATAL ERROR: names.txt is missing or cannot be opened" << std::endl;
     std::exit(1);
   }
+
+  return nameQueue;
 }
 
 std::string NameParser::parseLine(std::string line)
 {
   std::string name = line.substr(0, line.find(" "));
-
-  std::cout << name << std::endl;
 
   return name;
 }

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 
 #include "VigenereCiphere.hpp"
 #include "NameParser.hpp"
@@ -19,8 +20,11 @@ int main()
   std::cout << ciphere.decrypt(encrypted, key) << std::endl;
 
   //testing NameParser
+  std::queue<std::string> nameQueue;
+
   NameParser parse;
-  parse.readFile();
+  nameQueue = parse.readFile();
+  std::cout << nameQueue.front() << std::endl;
 
 	return 0;
 }

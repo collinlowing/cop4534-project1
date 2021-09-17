@@ -12,6 +12,8 @@
 #include <string>
 #include <iostream>
 #include <fstream>
+#include <queue>
+
 
 //#include "NameLinkedList.hpp"
 
@@ -21,7 +23,7 @@ private:
   std::ifstream fileInputStream;
   //NameLinkedList nameList;
 public:
-  void readFile();
+  std::queue<std::string> readFile();
   std::string parseLine(std::string line);
 };
 
