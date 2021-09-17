@@ -26,5 +26,23 @@ int main()
   nameQueue = parse.readFile();
   std::cout << nameQueue.front() << std::endl;
 
+  std::string outputFileName = "encrypteddata.txt";
+  std::fstream fileOutput;
+
+  fileOutput.open(outputFileName, std::ios_base::out);
+  if(!fileOutput.is_open())
+  {
+    std::cout << "encrypteddata.txt could not be opened or created." << std::endl;
+    exit(1);
+  }
+  else
+  {
+    while(!nameQueue.empty())
+    {
+      fileOutput << ciphere.encrypt(nameQueue.front(), key) << std::endl;
+      nameQueue.pop();
+    }
+  }
+
 	return 0;
 }

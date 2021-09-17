@@ -14,5 +14,15 @@ HashEntry::HashEntry() {
 }
 
 HashEntry::~HashEntry() {
-	// TODO Auto-generated destructor stub
+	while(nextEntry != nullptr)
+  {
+    HashEntry* tempPtr = nextEntry;
+    delete nextEntry;
+  }
 }
+
+std::string getValue();
+  void setValue(std::string value);
+  int getKey();
+  HashEntry* getNextEntry();
+  void setNextEntry(HashEntry* nextEntry);
