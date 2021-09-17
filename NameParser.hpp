@@ -9,9 +9,20 @@
 #ifndef NAMEPARSER_H_
 #define NAMEPARSER_H_
 
-class NameParser {
-public:
+#include <string>
+#include <iostream>
+#include <fstream>
 
+//#include "NameLinkedList.hpp"
+
+class NameParser {
+private:
+  std::string fileName = "names.txt";
+  std::ifstream fileInputStream;
+  //NameLinkedList nameList;
+public:
+  void readFile();
+  std::string parseLine(std::string line);
 };
 
 #endif /* NAMEPARSER_H_ */

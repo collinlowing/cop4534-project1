@@ -1,9 +1,11 @@
 #include <iostream>
 
 #include "VigenereCiphere.hpp"
+#include "NameParser.hpp"
 
 int main()
 {
+  // Testing Ciphere
 	std::string test = "HELLO";
   std::string keyWord = "JAMES";
   std::string key;
@@ -15,6 +17,10 @@ int main()
 
 	std::cout << encrypted << std::endl;
   std::cout << ciphere.decrypt(encrypted, key) << std::endl;
+
+  //testing NameParser
+  NameParser parse;
+  parse.readFile();
 
 	return 0;
 }
